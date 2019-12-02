@@ -19,12 +19,7 @@ params = {
 funcs = (func_mlr,  None, None)
 
 mlr_algorithms = [
-    # ("EM_HD", EM_HD(funcs=funcs, max_iter=params['max_iter'], info="EM", reg=params['reg'])),
-    # ("EMP_HD", EMP(funcs=funcs, max_iter=params['max_iter'], info="EMP", reg=params['reg'])),
-    # ("RR_HD", ARR_HD(funcs=funcs, max_iter=params['max_iter'], info="RR", reg=params['reg'])),
     ("ARR_HD", ARR_HD(funcs=funcs, max_iter=params['max_iter'], info="Adaptive RR", reg=params['reg'])),
-    # ("EMRR_HD", EMRR(funcs=funcs,max_iter=params['max_iter'], info="EMRR", reg=params['reg'])),
-    # ("RRONE_HD", RRONE_HD(funcs=funcs, max_iter=params['max_iter'], info="RRONE", reg=params['reg']))
 ]
 
 for i in range(params['num_simulation']):
